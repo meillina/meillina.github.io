@@ -1,0 +1,589 @@
+/* ================= BODY ================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding-top: 74px;
+    font-family: Arial, sans-serif;
+    color: #a7195b;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background: #e83e8c !important;
+    height: 74px;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar-brand span {
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd6e8 !important;
+}
+
+
+/* ================= HOME ================= */
+
+.hero {
+    min-height: calc(100vh - 74px);
+
+    position: relative;
+
+    background: #ffeaf4;
+
+    padding: 70px 0 130px;
+
+    overflow: hidden;
+}
+
+
+/* ================= FOTO ================= */
+
+.foto-area {
+    position: relative;
+    z-index: 2;
+}
+
+.foto-lingkaran {
+    width: 320px;
+    height: 320px;
+
+    margin: auto;
+
+    padding: 7px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    box-shadow: 0 8px 25px rgba(220, 60, 130, 0.3);
+}
+
+.foto-lingkaran img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+}
+
+
+/* ================= MAHKOTA ================= */
+
+.mahkota {
+    position: absolute;
+
+    top: -45px;
+    left: 80px;
+
+    font-size: 60px;
+
+    color: #e83e8c;
+
+    z-index: 5;
+}
+
+
+/* ================= HERO TEXT ================= */
+
+.hero-text {
+    padding-left: 30px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.hero-text h1 {
+    margin-top: 25px;
+
+    font-size: 48px;
+
+    font-weight: bold;
+
+    color: #a7195b;
+}
+
+.hero-text h1 span {
+    color: #a7195b;
+}
+
+.profesi {
+    font-size: 24px;
+
+    color: #b34b7c;
+
+    margin-top: 10px;
+}
+
+
+/* ================= BUBBLE ================= */
+
+.bubble {
+    display: inline-block;
+
+    background: white;
+
+    border: 4px solid #e83e8c;
+
+    border-radius: 40px;
+
+    padding: 15px 30px;
+
+    color: #a7195b;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    position: relative;
+}
+
+.bubble-title {
+    font-size: 30px;
+}
+
+.bubble span {
+    color: #e83e8c;
+}
+
+
+/* ================= EKOR BUBBLE ================= */
+
+.bubble::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: -20px;
+    left: 45px;
+
+    width: 25px;
+    height: 25px;
+
+    background: white;
+
+    border-left: 4px solid #e83e8c;
+    border-bottom: 4px solid #e83e8c;
+
+    transform: rotate(-25deg);
+}
+
+
+/* ================= HIASAN ================= */
+
+.hati-1 {
+    position: absolute;
+
+    top: 150px;
+    left: 12%;
+
+    font-size: 35px;
+
+    color: #e83e8c;
+}
+
+.hati-2 {
+    position: absolute;
+
+    top: 220px;
+    left: 15%;
+
+    font-size: 22px;
+
+    color: #e83e8c;
+}
+
+.hati-3 {
+    position: absolute;
+
+    right: 8%;
+    bottom: 100px;
+
+    font-size: 40px;
+
+    color: #e83e8c;
+}
+
+.hati-4 {
+    position: absolute;
+
+    right: 4%;
+    bottom: 80px;
+
+    font-size: 25px;
+
+    color: #e83e8c;
+}
+
+
+/* ================= GARIS ================= */
+
+.garis {
+    width: 220px;
+
+    height: 5px;
+
+    background: #e83e8c;
+
+    border-radius: 10px;
+
+    margin-top: 20px;
+}
+
+
+/* ================= WAVE ================= */
+
+.wave {
+    position: absolute;
+
+    bottom: -1px;
+    left: 0;
+
+    width: 100%;
+    height: 100px;
+
+    background: #f7b5d2;
+
+    border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+}
+
+
+/* ================= SECTION ================= */
+
+section:not(.hero) {
+    padding: 90px 0;
+}
+
+
+/* ================= JUDUL ================= */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+
+    font-weight: bold;
+
+    color: #a7195b;
+}
+
+.section-title p {
+    color: #b85a85;
+}
+
+
+/* ================= TENTANG ================= */
+
+#tentang {
+    background: white;
+}
+
+#tentang h3 {
+    color: #a7195b;
+}
+
+
+/* ================= FOTO TENTANG ================= */
+
+.foto-tentang {
+    width: 280px;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid white;
+
+    box-shadow: 0 5px 20px rgba(220, 60, 130, 0.25);
+}
+
+
+/* ================= PINK SECTION ================= */
+
+.section-pink {
+    background: #fff0f7;
+}
+
+
+/* ================= CARD ================= */
+
+.card {
+    border: none;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ================= GAMBAR ================= */
+
+.project-img,
+.hobby-img,
+.activity-img {
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #e83e8c !important;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* ================= HP ================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        text-align: center;
+
+        padding-top: 60px;
+    }
+
+    .foto-lingkaran {
+        width: 250px;
+        height: 250px;
+    }
+
+    .mahkota {
+        left: 15%;
+    }
+
+    .hero-text {
+        padding: 0 15px;
+
+        margin-top: 50px;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .profesi {
+        font-size: 20px;
+    }
+
+    .garis {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/* ================= NAVBAR PINK ================= */
+
+.navbar {
+    background-color: #ff69b4 !important;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 10px;
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd6e8 !important;
+}
+
+
+/* ================= HOME ================= */
+
+.jumbotron {
+    padding-top: 70px;
+    padding-bottom: 120px;
+    background-color: #ffe4f0;
+}
+
+
+/* ================= FOTO GOYANG ================= */
+
+.foto-gerak {
+    animation: goyang 2s ease-in-out infinite;
+}
+
+@keyframes goyang {
+
+    0% {
+        transform: rotate(0deg) translateY(0);
+    }
+
+    25% {
+        transform: rotate(-5deg) translateY(-8px);
+    }
+
+    50% {
+        transform: rotate(0deg) translateY(0);
+    }
+
+    75% {
+        transform: rotate(5deg) translateY(8px);
+    }
+
+    100% {
+        transform: rotate(0deg) translateY(0);
+    }
+
+}
+
+
+/* ================= BUBBLE TEKS ================= */
+
+.bubble-teks {
+    position: relative;
+    display: inline-block;
+
+    background: #ff69b4;
+    color: white;
+
+    padding: 15px 25px;
+    border-radius: 25px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.35);
+
+    animation: bubbleNaik 2s ease-in-out infinite;
+}
+
+
+/* EKOR BUBBLE */
+
+.bubble-teks::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: -15px;
+    left: 30px;
+
+    border-width: 15px 15px 0 0;
+    border-style: solid;
+
+    border-color: #ff69b4 transparent transparent transparent;
+}
+
+
+/* BUBBLE NAIK TURUN */
+
+@keyframes bubbleNaik {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ================= SEMUA SECTION ================= */
+
+section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+
+/* ================= CARD ================= */
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+/* ================= GAMBAR ================= */
+
+.project-img,
+.hobby-img,
+.activity-img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+
+/* ================= FOTO TENTANG SAYA ================= */
+
+.foto-tentang {
+    width: 300px;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid white;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ================= JUDUL ================= */
+
+h2 {
+    font-weight: 600;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #ff69b4 !important;
+}
